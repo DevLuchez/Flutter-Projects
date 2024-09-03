@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/text_screen.dart';
+import 'package:myapp/text_widgets.dart';
 import 'package:myapp/contact_form.dart';
 
 class Home extends StatefulWidget {
@@ -14,7 +14,9 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Personalizando Botões")
+        title: Text("Personalizando Botões",
+        style: TextStyle(color: Color(0xFFA470D4)),
+        )
       ),
       body: Center(
         child: Column(
@@ -24,7 +26,7 @@ class _HomeState extends State<Home> {
               onPressed: (){},
               child: Text("Botão arredondado")
             ),
-            
+
             SizedBox(height: 20),
 
             ElevatedButton(
