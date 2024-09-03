@@ -5,7 +5,9 @@ class TextScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Manipulando Widgets de Texto'),
+        title: Text('Manipulando Widgets de Texto',
+        style: TextStyle(color: Color(0xFFA470D4)),
+        ),
       ),
       body: Center(
         child: Column(
@@ -38,7 +40,7 @@ class TextScreen extends StatelessWidget {
               ),
               textAlign: TextAlign.center, // Centraliza o texto
             ),
-            
+
             SizedBox(height: 40),
           ],
         ),
