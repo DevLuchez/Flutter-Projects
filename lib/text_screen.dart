@@ -18,7 +18,9 @@ class TextScreen extends StatelessWidget {
                 decoration: TextDecoration.underline,
               ),
             ),
+
             SizedBox(height: 20),
+
             Text(
               'Texto em itálico e azul',
               style: TextStyle(
@@ -26,7 +28,9 @@ class TextScreen extends StatelessWidget {
                 color: Colors.blue,
               ),
             ),
+
             SizedBox(height: 20),
+
             Text(
               'Texto grande e centralizado',
               style: TextStyle(
@@ -34,13 +38,8 @@ class TextScreen extends StatelessWidget {
               ),
               textAlign: TextAlign.center, // Centraliza o texto
             ),
+            
             SizedBox(height: 40),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pop(context); // Volta para a tela anterior
-              },
-              child: Text('Manipular botões'),
-            ),
           ],
         ),
       ),
