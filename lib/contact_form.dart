@@ -12,7 +12,9 @@ class _ContactFormState extends State<ContactForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Formulário de Contato"),
+        title: Text("Formulário de Contato",
+        style: TextStyle(color: Color(0xFFA470D4)),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -50,10 +52,16 @@ class _ContactFormState extends State<ContactForm> {
             ElevatedButton(
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Mensagem enviada!')),
+                  SnackBar(content: Text('Parabéns! Você enviou sua primeira mensagem em Flutter!')),
                 );
               },
-              child: Text("Enviar"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFFA470D4),
+                shadowColor: Colors.purple,
+              ),
+              child: Text("Enviar",
+                style: TextStyle(color: Colors.white),
+              )
             ),
           ],
         ),
