@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/text_widgets.dart';
+import 'package:myapp/text_screen.dart';
 import 'package:myapp/contact_form.dart';
 
 class Home extends StatefulWidget {
