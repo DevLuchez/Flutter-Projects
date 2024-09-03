@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             ElevatedButton(
               onPressed: (){},
-              child: Text("Botão sem graça")
+              child: Text("Botão arredondado")
             ),
             SizedBox(height: 20),
 
