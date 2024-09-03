@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/text_screen.dart';
+import 'package:myapp/text_widgets.dart';
+import 'package:myapp/contact_form.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -23,6 +24,7 @@ class _HomeState extends State<Home> {
               onPressed: (){},
               child: Text("Botão arredondado")
             ),
+            
             SizedBox(height: 20),
 
             ElevatedButton(
@@ -35,6 +37,7 @@ class _HomeState extends State<Home> {
                 shadowColor: Colors.purple,
               )
             ),
+
             SizedBox(height: 20),
 
             ElevatedButton(
@@ -54,6 +57,19 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
+
+            SizedBox(height: 20),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ContactForm()),
+                );
+              },
+              child: Text("Abrir Formulário de Contato"),
+            ),
+
             SizedBox(height: 20),
           ],
         )
